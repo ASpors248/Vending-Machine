@@ -1,0 +1,4 @@
+A1,Nachos,Munchy,3.85
+B2,Turkey Sandwich,Sandwich,4.85
+C3,7Down,Drink,1.75
+A4,Chocolate Bar,Dessert,1.75

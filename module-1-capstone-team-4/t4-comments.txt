@@ -1,0 +1,26 @@
+- You need to check for invalid input when entering a dollar amount:
+
+-----------------------------------------------
+Please enter money (1, 5, 10, or 20):iodine
+Exception in thread "main" java.lang.NumberFormatException: Character i is neither a decimal digit number, decimal point, nor "e" notation exponential mark.
+	at java.base/java.math.BigDecimal.<init>(BigDecimal.java:518)
+	at java.base/java.math.BigDecimal.<init>(BigDecimal.java:401)
+-----------------------------------------------
+
+- The formatting looks a bit strange for when we display the item prior
+to a purchase:
+-----------------------------------------------
+Current Money Provided: $20.00
+(M) Feed Money
+(S) Select Item
+(F) Finish Transaction
+
+S
+{D1=Items{name='Preengles', price=2.35, itemsLeft=7'}, C1=Items{name='Popcorn', price=1.75, itemsLeft=7'}, 
+-----------------------------------------------
+
+I would suggest a list-like top down approach to displaying this.
+
+- Consider separating the functionality to remember how much money was
+fed in, and the functionality to log onto a file onto their own
+separate classes.
